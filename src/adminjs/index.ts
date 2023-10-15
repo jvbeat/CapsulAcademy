@@ -2,22 +2,24 @@ import AdminJs from 'adminjs'
 import AdminJsExpress from '@adminjs/express'
 import AdminJsSequelize from '@adminjs/sequelize'
 import { sequelize } from '../database'
+import { adminJsResources } from './resources'
 
 AdminJs.registerAdapter(AdminJsSequelize)
 
 export const adminJs = new AdminJs({
   databases: [sequelize],
   rootPath: '/admin',
-  branding: {
+  resources: adminJsResources,
+	branding: {
     companyName: 'Capsul Academy',
-    logo: '/onebitflix.svg',
+    logo: '/logo.png',
     theme: {
       colors: {
-        primary100: '#ff0043',
-	      primary80: '#ff1a57',
-	      primary60: '#ff3369',
-	      primary40: '#ff4d7c',
-		    primary20: '#ff668f',
+        primary100: '#218EA1',
+	      primary80: '#45BBC0',
+	      primary60: '#A3CDDD',
+	      primary40: '#E3F3FA',
+		    primary20: '#156885',
 	      grey100: '#151515',
 	      grey80: '#333333',
 	      grey60: '#4d4d4d',
