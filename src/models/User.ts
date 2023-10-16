@@ -1,6 +1,6 @@
-import { sequelize } from '../database'
-import { DataTypes, Model, Optional } from 'sequelize'
-import bcrypt from 'bcrypt'
+import { sequelize } from '../database';
+import { DataTypes, Model, Optional } from 'sequelize';
+import bcrypt from 'bcrypt';
 
 export interface User {
   id: number

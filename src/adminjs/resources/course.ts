@@ -1,5 +1,5 @@
-import { FeatureType, ResourceOptions } from 'adminjs'
-import uploadFileFeature from '@adminjs/upload'
+import { FeatureType, ResourceOptions } from 'adminjs';
+import uploadFileFeature from '@adminjs/upload';
 import path from 'path'
 
 export const courseResourceOptions: ResourceOptions = {
