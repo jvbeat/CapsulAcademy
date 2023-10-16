@@ -4,7 +4,8 @@ import AdminJsSequelize from '@adminjs/sequelize';
 import { sequelize } from '../database';
 import { adminJsResources } from './resources';
 import { User } from '../models';
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcrypt';
+import { locale } from './locale'
 
 AdminJs.registerAdapter(AdminJsSequelize)
 
@@ -12,6 +13,7 @@ export const adminJs = new AdminJs({
   databases: [sequelize],
   rootPath: '/admin',
   resources: adminJsResources,
+	locale: locale,
 	branding: {
     companyName: 'Capsul Academy',
     logo: '/logo.png',
