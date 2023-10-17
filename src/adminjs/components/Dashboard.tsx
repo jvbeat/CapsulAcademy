@@ -1,5 +1,3 @@
-// src/adminjs/components/Dashboard.tsx
-
 import React, { useEffect, useState } from 'react'
 import { H1, H2, Table, TableHead, TableBody, TableRow, TableCell } from '@adminjs/design-system'
 import { ApiClient, useCurrentAdmin } from 'adminjs'
