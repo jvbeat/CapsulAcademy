@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { jwtService } from '../services/jwtServices'
+import { jwtService } from '../services/jwtService'
 import { userService } from "../services/userService";
 
 export const authController = {

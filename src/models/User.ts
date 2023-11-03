@@ -18,8 +18,8 @@ export interface User {
 
 export interface UserCreationAttributes extends Optional<User, 'id'> {}
 
-export interface UserInstance extends Model<User, UserCreationAttributes>, User { 
- checkPassword: (password: string, callbackfn: CheckPasswordCallback) => void
+export interface UserInstance extends Model<User, UserCreationAttributes>, User {
+  checkPassword: (password: string, callbackfn: CheckPasswordCallback) => void
 }
   
 export const User = sequelize.define<UserInstance, User>('User', {
